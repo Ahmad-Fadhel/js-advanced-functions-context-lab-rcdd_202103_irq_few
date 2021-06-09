@@ -54,13 +54,13 @@ function wagesEarnedOnDate(date){
 }
 
 
-function findEmployeeByFirstName(employees, firstName){
+const findEmployeeByFirstName = (employees, firstName) =>{
   return employees.find(employee => {
     return employee.firstName === firstName;
   });
 }
 
-function calculatePayroll(allEmployees){
+const calculatePayroll = (allEmployees) =>{
   return allEmployees.reduce((sum, payOwed) => sum + allWagesFor.call(payOwed), 0);
 }
 
