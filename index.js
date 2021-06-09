@@ -17,10 +17,10 @@ const createEmployeeRecords = employeeRecord =>{
 };
 
 
-const createTimeInEvent = (dateStamp) =>{
+function createTimeInEvent(dateStamp){
   let [date, hour] = dateStamp.split(' ');
 
-  timeInEvents.push({
+  this.timeInEvents.push({
     type: "TimeIn", 
     hour: parseInt(hour, 10),
     date: date
